@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    h1{
+        @apply text-5xl;
+    }
+    body{
+       @apply bg-blue-500;
+    }
+    a{
+        @apply text-3xl;
+        @apply text-blue;
+    }
+    a:hover{
+        @apply text-blue-400;
+    }
+    a:visited{
+
+    }
+}
+
+.overflow-hidden{
+    margin: 1rem;
+    @apply shadow-lg;
+    @apply shadow-md;
+    @apply bg-blue-700;
+}
+
+.inline-block{
+    @apply rounded-full;
+    @apply text-sm;
+    @apply font-semibold
+}
+
+.grid{
+    @apply justify-center;
+    @apply sm:grid-cols-1 gap-12;
+    @apply md:grid-cols-2 gap-6;
+    @apply lg:grid-cols-3 gap-4;
+    @apply sm:items-center;
+    @apply items-stretch;
+    
+}
+
